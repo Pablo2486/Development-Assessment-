@@ -34,10 +34,10 @@ namespace Asigment
             double workoutDistance;
             double workingTime;
 
-            double CSS;
-            double NSS;
-            double IF;
-            double TSS;
+            double CSS; //Critical Swim Speed
+            double NSS; //Normalized Swim Speed
+            double IF;  //Intensity Factor 
+            double TSS; //Training Stress Score
 
             //Inputs
 
