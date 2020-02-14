@@ -46,16 +46,17 @@ namespace Asigment
 
             shortDistance = double.Parse(lblShorterDistance.Text);
             shortTime = double.Parse(lblShorterTime.Text);
+
             //This 2 lines of code are used to calculate the NSS
             workoutDistance = double.Parse(lblWorkoutDistance.Text);
             workingTime = double.Parse(lblWorkingTime.Text);
 
             //Processing
 
-            CSS = (longDistance - shortDistance) / (longTime - shortTime);
-            NSS = (workoutDistance / workingTime);
-            IF = (NSS / CSS);
-            TSS = ((Math.Pow(IF, 3)) * (workingTime/3600) * 100);
+            CSS = (longDistance - shortDistance) / (longTime - shortTime); //Calculates the CSS
+            NSS = (workoutDistance / workingTime);                         //Calculates tge NSS
+            IF = (NSS / CSS);                                             //Calculates the IF
+            TSS = ((Math.Pow(IF, 3)) * (workingTime/3600) * 100);         //Calculates the TSS
 
             //OutPut
             
