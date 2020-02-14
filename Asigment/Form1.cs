@@ -40,13 +40,13 @@ namespace Asigment
             double TSS; //Training Stress Score
 
             //Inputs
-            
+            //This 4 lines (with code) are used to calculate the CSS
             longDistance = double.Parse(lblLongerDistance.Text);
             longTime = double.Parse(lblLongerTime.Text);
 
             shortDistance = double.Parse(lblShorterDistance.Text);
             shortTime = double.Parse(lblShorterTime.Text);
-
+            //This 2 lines of code are used to calculate the NSS
             workoutDistance = double.Parse(lblWorkoutDistance.Text);
             workingTime = double.Parse(lblWorkingTime.Text);
 
@@ -58,7 +58,7 @@ namespace Asigment
             TSS = ((Math.Pow(IF, 3)) * (workingTime/3600) * 100);
 
             //OutPut
-
+            
             lblCSS.Text = CSS.ToString();
             lblNSS.Text = NSS.ToString();
             lblIF.Text = IF.ToString();
