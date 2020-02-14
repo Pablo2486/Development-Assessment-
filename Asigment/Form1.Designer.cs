@@ -39,8 +39,6 @@
             this.lblShorterTime = new System.Windows.Forms.TextBox();
             this.Calculate = new System.Windows.Forms.Button();
             this.lblCSS = new System.Windows.Forms.TextBox();
-            this.label6 = new System.Windows.Forms.Label();
-            this.lblName = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
             this.lblWorkoutDistance = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
@@ -59,9 +57,9 @@
             this.label1.Location = new System.Drawing.Point(236, 7);
             this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(110, 13);
+            this.label1.Size = new System.Drawing.Size(150, 13);
             this.label1.TabIndex = 0;
-            this.label1.Text = "Long Swim Distance: ";
+            this.label1.Text = "Long Swim Distance (metres): ";
             // 
             // label2
             // 
@@ -79,9 +77,9 @@
             this.label3.Location = new System.Drawing.Point(235, 97);
             this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(108, 13);
+            this.label3.Size = new System.Drawing.Size(148, 13);
             this.label3.TabIndex = 2;
-            this.label3.Text = "Short Swim Distance:";
+            this.label3.Text = "Short Swim Distance (metres):";
             // 
             // label4
             // 
@@ -138,7 +136,7 @@
             // 
             // Calculate
             // 
-            this.Calculate.Location = new System.Drawing.Point(237, 198);
+            this.Calculate.Location = new System.Drawing.Point(344, 193);
             this.Calculate.Margin = new System.Windows.Forms.Padding(2);
             this.Calculate.Name = "Calculate";
             this.Calculate.Size = new System.Drawing.Size(105, 19);
@@ -154,24 +152,6 @@
             this.lblCSS.Name = "lblCSS";
             this.lblCSS.Size = new System.Drawing.Size(123, 20);
             this.lblCSS.TabIndex = 10;
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(74, 7);
-            this.label6.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(41, 13);
-            this.label6.TabIndex = 11;
-            this.label6.Text = "Name: ";
-            // 
-            // lblName
-            // 
-            this.lblName.Location = new System.Drawing.Point(43, 24);
-            this.lblName.Margin = new System.Windows.Forms.Padding(2);
-            this.lblName.Name = "lblName";
-            this.lblName.Size = new System.Drawing.Size(104, 20);
-            this.lblName.TabIndex = 12;
             // 
             // label7
             // 
@@ -273,8 +253,6 @@
             this.Controls.Add(this.label8);
             this.Controls.Add(this.lblWorkoutDistance);
             this.Controls.Add(this.label7);
-            this.Controls.Add(this.lblName);
-            this.Controls.Add(this.label6);
             this.Controls.Add(this.lblCSS);
             this.Controls.Add(this.Calculate);
             this.Controls.Add(this.lblShorterTime);
@@ -307,8 +285,6 @@
         private System.Windows.Forms.TextBox lblShorterTime;
         private System.Windows.Forms.Button Calculate;
         private System.Windows.Forms.TextBox lblCSS;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.TextBox lblName;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.TextBox lblWorkoutDistance;
         private System.Windows.Forms.Label label8;

@@ -40,7 +40,7 @@ namespace Asigment
             double TSS; //Training Stress Score
 
             //Inputs
-
+            
             longDistance = double.Parse(lblLongerDistance.Text);
             longTime = double.Parse(lblLongerTime.Text);
 
@@ -55,7 +55,7 @@ namespace Asigment
             CSS = (longDistance - shortDistance) / (longTime - shortTime);
             NSS = (workoutDistance / workingTime);
             IF = (NSS / CSS);
-            TSS = ((IF * IF * IF) * (workingTime/3600) * 100);
+            TSS = ((Math.Pow(IF, 3)) * (workingTime/3600) * 100);
 
             //OutPut
 
