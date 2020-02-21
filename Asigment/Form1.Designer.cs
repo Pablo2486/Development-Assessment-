@@ -49,6 +49,8 @@
             this.lblIF = new System.Windows.Forms.TextBox();
             this.label11 = new System.Windows.Forms.Label();
             this.lblTSS = new System.Windows.Forms.TextBox();
+            this.lblSwimerName = new System.Windows.Forms.TextBox();
+            this.label6 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // label1
@@ -238,11 +240,31 @@
             this.lblTSS.Size = new System.Drawing.Size(125, 20);
             this.lblTSS.TabIndex = 23;
             // 
+            // lblSwimerName
+            // 
+            this.lblSwimerName.Location = new System.Drawing.Point(52, 94);
+            this.lblSwimerName.Margin = new System.Windows.Forms.Padding(2);
+            this.lblSwimerName.Name = "lblSwimerName";
+            this.lblSwimerName.Size = new System.Drawing.Size(104, 20);
+            this.lblSwimerName.TabIndex = 24;
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(49, 79);
+            this.label6.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(93, 13);
+            this.label6.TabIndex = 25;
+            this.label6.Text = "Swimmer\'s Name: ";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(990, 576);
+            this.Controls.Add(this.label6);
+            this.Controls.Add(this.lblSwimerName);
             this.Controls.Add(this.lblTSS);
             this.Controls.Add(this.label11);
             this.Controls.Add(this.lblIF);
@@ -295,6 +317,8 @@
         private System.Windows.Forms.TextBox lblIF;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.TextBox lblTSS;
+        private System.Windows.Forms.TextBox lblSwimerName;
+        private System.Windows.Forms.Label label6;
     }
 }
 

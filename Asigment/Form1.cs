@@ -24,6 +24,14 @@ namespace Asigment
 
         private void Calculate_Click(object sender, EventArgs e)
         {
+            //Declare Swimmer's Label, so we can write the Swimmer's Name, and store it with his/her proper Data
+
+            string swimmerName;
+
+            swimmerName = Console.ReadLine();
+
+            swimmerName = lblSwimerName.ToString();
+
             //Declarations
 
             double longDistance;
