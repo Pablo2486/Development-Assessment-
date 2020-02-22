@@ -57,6 +57,37 @@ namespace Asigment
             IF = (NSS / CSS);
             TSS = ((IF * IF * IF) * (workingTime/3600) * 100);
 
+            //Displaying the Array
+
+            string[,,] Array_ThreeDimension = new string[3, 2, 2];  //x = 3; y = 3; z = 3;   //Multiplying this 3 numbers, we obtaing 10, for the swimmers required
+              
+            Array_ThreeDimension[1, 1, 1] = "Hello World";
+
+            int x = 0;  //Intial 'x' value
+            int y = 0;  //Intial 'y' value
+            int z = 0;  //Intial 'z' value
+
+            for (x = 0; x <= 2; x++)
+            {
+                for(y = 0; y <= 2; y++)
+                {
+                    for(z = 0; z <= 0; z++)
+                    {
+                        Console.WriteLine("{0}  {1}  {2}", x, y, z);
+                        if(Array_ThreeDimension [x, y, z] == null)  //null = empty
+                        {
+                            Console.WriteLine("Empty");
+                        }
+                        else
+                        {
+                            Console.WriteLine("{0}", Array_ThreeDimension[x, y, z]);
+                        }
+                    }                    
+                }
+            }
+
+
+
             //OutPut
 
             lblCSS.Text = CSS.ToString();
