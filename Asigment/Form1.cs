@@ -65,7 +65,7 @@ namespace Asigment
 
             string[,,] Array_ThreeDimension = new string[3, 2, 2];  //x = 3; y = 3; z = 3;   //Multiplying this 3 numbers, we obtaing 10, for the swimmers required
               
-            Array_ThreeDimension[1, 1, 1] = "Hello World";
+            Array_ThreeDimension[1, 1, 1] = "Hello World";  //Used to ckech that the Array temporaly works
 
             int x = 0;  //Intial 'x' value
             int y = 0;  //Intial 'y' value
