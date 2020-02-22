@@ -26,6 +26,8 @@ namespace Asigment
         {
             //Declarations
 
+            string userName;
+
             double longDistance;
             double longTime;
             double shortDistance;
@@ -40,6 +42,8 @@ namespace Asigment
             double TSS; //Training Stress Score
 
             //Inputs
+
+            userName = Console.ReadLine();
 
             longDistance = double.Parse(lblLongerDistance.Text);
             longTime = double.Parse(lblLongerTime.Text);
@@ -89,6 +93,8 @@ namespace Asigment
 
 
             //OutPut
+
+            lblName.Text = Console.ReadLine();
 
             lblCSS.Text = CSS.ToString();
             lblNSS.Text = NSS.ToString();

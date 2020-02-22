@@ -51,6 +51,10 @@
             this.lblIF = new System.Windows.Forms.TextBox();
             this.label11 = new System.Windows.Forms.Label();
             this.lblTSS = new System.Windows.Forms.TextBox();
+            this.lblMonthOfTraining = new System.Windows.Forms.TextBox();
+            this.label12 = new System.Windows.Forms.Label();
+            this.label13 = new System.Windows.Forms.Label();
+            this.lblWeeksInTheMonth = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // label1
@@ -153,7 +157,7 @@
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(99, 9);
+            this.label6.Location = new System.Drawing.Point(54, 9);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(53, 17);
             this.label6.TabIndex = 11;
@@ -257,11 +261,49 @@
             this.lblTSS.Size = new System.Drawing.Size(165, 22);
             this.lblTSS.TabIndex = 23;
             // 
+            // lblMonthOfTraining
+            // 
+            this.lblMonthOfTraining.Location = new System.Drawing.Point(57, 114);
+            this.lblMonthOfTraining.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.lblMonthOfTraining.Name = "lblMonthOfTraining";
+            this.lblMonthOfTraining.Size = new System.Drawing.Size(137, 22);
+            this.lblMonthOfTraining.TabIndex = 24;
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Location = new System.Drawing.Point(54, 95);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(130, 17);
+            this.label12.TabIndex = 25;
+            this.label12.Text = "Motnh Of Training: ";
+            // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.Location = new System.Drawing.Point(54, 193);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(222, 17);
+            this.label13.TabIndex = 26;
+            this.label13.Text = "How many Weeks has the month?";
+            // 
+            // lblWeeksInTheMonth
+            // 
+            this.lblWeeksInTheMonth.Location = new System.Drawing.Point(57, 212);
+            this.lblWeeksInTheMonth.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.lblWeeksInTheMonth.Name = "lblWeeksInTheMonth";
+            this.lblWeeksInTheMonth.Size = new System.Drawing.Size(137, 22);
+            this.lblWeeksInTheMonth.TabIndex = 27;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1320, 709);
+            this.Controls.Add(this.lblWeeksInTheMonth);
+            this.Controls.Add(this.label13);
+            this.Controls.Add(this.label12);
+            this.Controls.Add(this.lblMonthOfTraining);
             this.Controls.Add(this.lblTSS);
             this.Controls.Add(this.label11);
             this.Controls.Add(this.lblIF);
@@ -318,6 +360,10 @@
         private System.Windows.Forms.TextBox lblIF;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.TextBox lblTSS;
+        private System.Windows.Forms.TextBox lblMonthOfTraining;
+        private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.Label label13;
+        private System.Windows.Forms.TextBox lblWeeksInTheMonth;
     }
 }
 
