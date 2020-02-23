@@ -27,6 +27,7 @@ namespace Asigment
             //Declarations
 
             string userName;
+            string monthOfTraining; 
 
             double longDistance;
             double longTime;
@@ -43,7 +44,9 @@ namespace Asigment
 
             //Inputs
 
-            userName = Console.ReadLine();
+            userName = Console.ReadLine();  //Reads the Variable
+            monthOfTraining = Console.ReadLine();  //Reads the Variable
+
 
             longDistance = double.Parse(lblLongerDistance.Text);
             longTime = double.Parse(lblLongerTime.Text);
@@ -55,6 +58,8 @@ namespace Asigment
             workingTime = double.Parse(lblWorkingTime.Text);
 
             //Processing
+            userName = lblName.Text;  //Takes the name of the Swimmer (entered by the user) and 'saves' it
+            monthOfTraining = lblMonthOfTraining.Text;  //Takes the Month the Swimmer is training (entered by the user) and 'saves' it
 
             CSS = (longDistance - shortDistance) / (longTime - shortTime);
             NSS = (workoutDistance / workingTime);
@@ -63,21 +68,21 @@ namespace Asigment
 
             //Displaying the Array
 
-            string[,,] Array_ThreeDimension = new string[3, 2, 2];  //x = 3; y = 3; z = 3;   //Multiplying this 3 numbers, we obtaing 10, for the swimmers required
+            string[,,] Array_ThreeDimension = new string[3, 2, 2];  //x = 3; y = 3; z = 3;   //Multiplying this 3 numbers, we obtaing 10, as we need to create it for 10 swimmers
               
-            Array_ThreeDimension[1, 1, 1] = "Hello World";  //Used to ckech that the Array temporaly works
+            Array_ThreeDimension[1, 1, 1] = "Hello World";  //Used to check that the Array temporaly works
 
             int x = 0;  //Intial 'x' value
             int y = 0;  //Intial 'y' value
             int z = 0;  //Intial 'z' value
 
-            for (x = 0; x <= 2; x++)
+            for (x = 0; x <= 9; x++)
             {
-                for(y = 0; y <= 2; y++)
+                for(y = 0; y <= 9; y++)
                 {
-                    for(z = 0; z <= 0; z++)
+                    for(z = 0; z <= 9; z++)
                     {
-                        Console.WriteLine("{0}  {1}  {2}", x, y, z);
+                        Console.WriteLine("{0, 9}  {0, 9}  {0, 9}", x, y, z);
                         if(Array_ThreeDimension [x, y, z] == null)  //null = empty
                         {
                             Console.WriteLine("Empty");
@@ -94,7 +99,8 @@ namespace Asigment
 
             //OutPut
 
-            lblName.Text = Console.ReadLine();
+            lblName.Text = userName.ToString();
+            lblMonthOfTraining.Text = monthOfTraining.ToString();
 
             lblCSS.Text = CSS.ToString();
             lblNSS.Text = NSS.ToString();
